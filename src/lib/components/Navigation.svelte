@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import NavLink from './NavLink.svelte';
 </script>
 
@@ -9,3 +10,6 @@
 		<NavLink link="?settings=1" text="Settings" />
 	</ul>
 </nav>
+<div class="flex justify-center">
+	<LightSwitch />
+</div>

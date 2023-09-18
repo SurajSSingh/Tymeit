@@ -5,19 +5,8 @@
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
-	import {
-		AppShell,
-		AppBar,
-		LightSwitch,
-		Drawer,
-		drawerStore,
-		Toast,
-		Modal,
-		type ModalSettings,
-		toastStore
-	} from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, Drawer, drawerStore, Toast, Modal } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
-	import { notesStorage } from '$lib/store';
 
 	function drawerOpen(): void {
 		drawerStore.open();
@@ -30,9 +19,6 @@
 
 <Drawer>
 	<Navigation />
-	<div class="flex justify-center">
-		<LightSwitch />
-	</div>
 </Drawer>
 
 <!-- App Shell -->
@@ -40,9 +26,6 @@
 	<svelte:fragment slot="sidebarLeft">
 		<h1 class="text-6xl font-bold text-center">Tymit</h1>
 		<Navigation />
-		<div class="flex justify-center">
-			<LightSwitch />
-		</div>
 	</svelte:fragment>
 	<svelte:fragment slot="pageHeader">
 		<AppBar>
