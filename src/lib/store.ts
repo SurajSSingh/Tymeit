@@ -21,16 +21,14 @@ type Settings = {
 type Page = {
     name: string,
     path: string,
-    directlyShow: boolean,
 };
 
 export const notesStorage: Writable<Note[]> = localStorageStore("notes", []);
 export const userSettings: Writable<Settings | null> = localStorageStore("settings", null);
 export const routes: Readable<Page[]> = readonly(localStorageStore("pages", [
-    { name: 'Track', path: '/track', directlyShow: true},
-    { name: 'Timeline', path: '/timeline', directlyShow: true},
-    { name: 'Dashboard', path: '/dashboard' , directlyShow: true},
-    { name: 'Goals', path: '/goals' , directlyShow: false},
-    { name: 'Reminders', path: '/reminders' , directlyShow: false},
-    { name: 'Settings', path: '/settings' , directlyShow: false}
+    { name: 'History', path: '/history'},
+    { name: 'Dashboard', path: '/dashboard'},
+    { name: 'Active', path: '/active'},
+    { name: 'Track', path: '/track'},
+    { name: 'Settings', path: '/settings'}
 ]));
