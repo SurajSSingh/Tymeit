@@ -8,6 +8,7 @@
 	} from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
 	import { notesStorage } from '$lib/store';
+	import { page } from '$app/stores';
 
 	const drawerStore = getDrawerStore();
 	const toastStore = getToastStore();
@@ -62,21 +63,23 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Router Slot -->
-	<div class="container p-10 mx-auto">
+	<div class="container p-8 mx-auto md:pl-16">
 		<slot />
 	</div>
 	<!-- ---- / ---- -->
 	<svelte:fragment slot="pageFooter">
-		<form class="flex flex-row gap-3 p-4 card">
-			<textarea
-				bind:value={content}
-				rows="1"
-				class="flex-grow textarea"
-				placeholder="Note content..."
-			/>
-			<!-- on:focus={} -->
-			<button type="button" class="btn variant-ghost-primary" on:click={createNote}>+</button>
-		</form>
+		{#if $page.url.pathname !== '/settings'}
+			<form class="flex flex-row gap-3 p-4 card">
+				<textarea
+					bind:value={content}
+					rows="1"
+					class="flex-grow textarea"
+					placeholder="Note content..."
+				/>
+				<!-- on:focus={} -->
+				<button type="button" class="btn variant-ghost-primary" on:click={createNote}>+</button>
+			</form>
+		{/if}
 		<Navigation isVertical={false} />
 	</svelte:fragment>
 </AppShell>
