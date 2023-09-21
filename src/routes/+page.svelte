@@ -6,12 +6,13 @@
 
 	onMount(() => {
 		if ($userSettings) {
+			// Already went through introduction
 			goto('/track');
 		}
 	});
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col h-full">
 	<h1 class="p-4 text-center h1">
 		<span
 			class="text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-cyan-300 box-decoration-clone"
@@ -28,7 +29,5 @@
 			>Tymeit</span
 		>
 	</h1>
-
-	<button class="mx-8 btn variant-filled-primary" on:click={() => goto('/track')}>Home</button>
 	<Intro />
 </div>

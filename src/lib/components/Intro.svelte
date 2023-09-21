@@ -9,12 +9,12 @@
 	}
 </script>
 
-<Stepper on:complete={onCompleteIntro}>
+<Stepper on:complete={onCompleteIntro} regionContent="p-10 h-full">
 	<Step>
 		<svelte:fragment slot="header">Welcome</svelte:fragment>
 		<p>
 			Tymeit is a privacy respecting time tracking web app that allows you to keep track of things.
-			Since, this is your first time here, we will get something setup
+			Since, this is your first time here, we will get something setup first.
 		</p>
 	</Step>
 	<Step>
