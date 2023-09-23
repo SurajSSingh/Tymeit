@@ -12,6 +12,7 @@ type Note = {
     people?: People[],
     context?: Context[],
     stopwatches?: string[],
+    timestamp: Date,
 };
 
 type Settings = {

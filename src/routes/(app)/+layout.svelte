@@ -40,7 +40,8 @@
 				content,
 				trackers: trackers ?? [],
 				people,
-				context
+				context,
+				timestamp: new Date(Date.now())
 			}
 		]);
 		content = '';

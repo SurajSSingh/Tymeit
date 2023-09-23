@@ -52,7 +52,7 @@
 				<div>
 					{note.content}
 				</div>
-				<div class="flex flex-wrap gap-1">
+				<p class="flex flex-wrap gap-1">
 					{#each note.trackers as trackers}
 						<span class="badge variant-filled-primary">
 							{trackers.name}{#if trackers.data}
@@ -75,6 +75,9 @@
 							>
 						{/each}
 					{/if}
+				</p>
+				<div>
+					Date: {note.timestamp}
 				</div>
 			</div>
 		{/each}
