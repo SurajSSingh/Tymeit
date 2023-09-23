@@ -1,1 +1,1 @@
-<button class="m-4 w-full btn variant-outline-primary">+</button>
+<button class="m-4 btn variant-outline-primary">+</button>
