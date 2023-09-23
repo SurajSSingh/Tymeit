@@ -49,7 +49,12 @@
 </script>
 
 <!-- App Shell -->
-<AppShell slotSidebarLeft="w-0 md:w-52 bg-surface-500/10">
+<AppShell
+	slotSidebarLeft="w-0 lg:w-48 bg-surface-500/10"
+	slotPageHeader="fixed top-0 inset-x-2 lg:left-48 lg:right-0"
+	slotPageContent="pt-16 pb-48 lg:pb-32 px-4"
+	slotPageFooter="fixed bottom-0 inset-x-2 lg:left-48 lg:right-0"
+>
 	<svelte:fragment slot="sidebarLeft">
 		<h1 class="text-6xl font-bold text-center">Tymit</h1>
 		<Navigation />
@@ -63,9 +68,7 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Router Slot -->
-	<div class="container p-8 mx-auto md:pl-16">
-		<slot />
-	</div>
+	<slot />
 	<!-- ---- / ---- -->
 	<svelte:fragment slot="pageFooter">
 		{#if $page.url.pathname !== '/settings'}

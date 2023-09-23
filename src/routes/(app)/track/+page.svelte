@@ -37,17 +37,11 @@
 	}
 </script>
 
-<div class="gap-8 columns-2 md:columns-3xs">
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
-	<AddTracker />
+<div class="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+	{#each { length: 100 } as _, i}
+		<div class="p-4 m-2 text-center variant-ringed-primary">
+			<p>Row 1:{i * 2 + 1}</p>
+			<p>Row 2:{i * 3 + 2}</p>
+		</div>
+	{/each}
 </div>

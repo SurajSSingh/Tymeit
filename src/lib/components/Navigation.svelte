@@ -33,7 +33,7 @@
 		flex="flex-1 lg:flex-none"
 		rounded=""
 		border=""
-		class="w-full md:hidden bg-surface-100-800-token"
+		class="w-full lg:hidden bg-surface-100-800-token"
 	>
 		{#each $routes as route}
 			<TabAnchor href={route.path} selected={$page.url.pathname === route.path}>
