@@ -1,6 +1,6 @@
 # Tymeit
 
-A privacy respecting time tracker for yourself.
+A privacy respecting time tracker for yourself. Heavily inspired by [Nomie](https://nomie.app).
 
 **_NOTE: This project is still in pre-alpha._**
 
@@ -11,4 +11,4 @@ A privacy respecting time tracker for yourself.
 
 ## License
 
-[MIT License](LICNESE)
+[MIT License](./LICENSE)
