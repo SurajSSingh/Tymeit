@@ -1,0 +1,1 @@
+Tymeit is a time tracking journaling tool for the web. All data is stored securely locally and provides the user the ability to track, among others, habits, events, and people using stopwatches to give structured time for when they occur.
