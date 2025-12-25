@@ -10,25 +10,44 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 pnpm dlx sv create
 ```
 
+## install
+
+> Installs dependencies
+
+```sh
+pnpm install
+```
+
 ## dev
 
-> Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+> Start a development server
 
 ```sh
 pnpm run dev
+```
 
-# or start the server and open the app in a new browser tab
+### dev open
+
+> start the server and open the app in a new browser tab
+
+```sh
 pnpm run dev -- --open
 ```
 
-## Building
+## build
 
-To create a production version of your app:
+> Create a production version of the app
 
 ```sh
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## preview
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+> preview the production build
+
+```sh
+pnpm run preview
+```
+
+To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
