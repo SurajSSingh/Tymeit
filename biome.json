@@ -1,0 +1,52 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+	"assist": { "actions": { "source": { "organizeImports": "on" } } },
+
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"indentWidth": 4,
+		"lineWidth": 100,
+		"formatWithErrors": true
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"trailingCommas": "none",
+			"lineWidth": 100,
+			"indentStyle": "tab",
+			"indentWidth": 4
+		}
+	},
+	"json": {
+		"formatter": {
+			"lineWidth": 100
+		}
+	},
+	"css": {
+		"formatter": {
+			"lineWidth": 100,
+			"indentStyle": "tab",
+			"indentWidth": 4
+		},
+		"parser": {
+			"tailwindDirectives": true
+		}
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.svelte"],
+			"formatter": {
+				"lineWidth": 100,
+				"indentStyle": "tab",
+				"indentWidth": 4
+			}
+		}
+	]
+}

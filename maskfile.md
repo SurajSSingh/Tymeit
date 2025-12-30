@@ -1,8 +1,12 @@
-# Commands
+# Project Commands
+
+## sv
+
+> These are svelte specific commands
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## create
+### create
 
 > If you're seeing this, you've probably already done this step. Congrats!
 
@@ -10,7 +14,7 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 pnpm dlx sv create
 ```
 
-## install
+### install
 
 > Installs dependencies
 
@@ -18,7 +22,7 @@ pnpm dlx sv create
 pnpm install
 ```
 
-## dev
+### dev
 
 > Start a development server
 
@@ -26,7 +30,7 @@ pnpm install
 pnpm run dev
 ```
 
-### dev open
+#### dev open
 
 > start the server and open the app in a new browser tab
 
@@ -34,7 +38,7 @@ pnpm run dev
 pnpm run dev -- --open
 ```
 
-## build
+### build
 
 > Create a production version of the app
 
@@ -42,7 +46,7 @@ pnpm run dev -- --open
 pnpm run build
 ```
 
-## preview
+### preview
 
 > preview the production build
 
